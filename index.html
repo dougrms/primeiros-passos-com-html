@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guia HTML</title>
+
+</head>
+
+<body>
+
+<h1>HTML: Estrutura, Principais Tags e Atributos.</h1>
+<hr>
+<h2 id="INDICE">Indice:</h2>
+
+<ul>
+  <li><a href="#oqueéHTML">O que é HTML?</a></li>
+  <li><a href="#estrutura">Estrutura básica de um documento HTML. </a></li>
+  <li><a href="#TAG"> O que é uma tag HTML?</a></li>
+  <li><a href="#principaisTags"> Principais tags e seus atributos.</a>.
+    <ol>
+      <li><a href="#link"> &lt; link &gt;</a></li>
+      <li><a href="#h1ah6"> &lt; h1 &gt a &lt; h6 &gt;</a></li>
+      <li><a href="#p"> &lt; p &gt;</a></li>
+      <li><a href="#a"> &lt; a &gt;</a></li>
+      <li><a href="#img"> &lt; img &gt;</a></li>
+      <li><a href="#ul.ol.li"> &lt; ul &gt; , &lt; ol &gt; e &lt; li &gt;</a></li>
+      <li><a href="#div.span"> &lt; div &gt; e &lt; span &gt;</a></li>
+      <li><a href="#mark"> &lt; mark &gt;</a></li>
+      <li><a href="#small"> &lt; small &gt;</a></li>
+      <li><a href="#i"> &lt; i &gt;</a></li>
+      <li><a href="#u"> &lt; u &gt;</a></li>
+      <li><a href="#strong"> &lt; strong &gt;</a></li>
+      <li><a href="#sub.sup"> &lt; sub &gt; e &lt; sup&gt;</a></li>
+      <li><a href="#blackquote"> &lt; blackquote &gt;</a></li>
+      <li><a href="#abbr"> &lt; abbr &gt;</a></li>
+      <li><a href="#hr"> &lt; hr &gt;</a></li>
+    </ol>
+  <li><a href="referencias">Referências e Fontes.</a></li>
+</ul>
+
+<hr>
+
+<h2 id="oqueéHTML">O que é HTML?</h2>
+
+<p>HTML, que significa HyperText Markup Language, é a linguagem padrão usada para criar e estruturar páginas na web.
+  Pense no HTML como a planta de uma casa. Ele define a estrutura básica, como onde ficam as paredes, portas e janelas,
+  mas não decide a cor das paredes ou o tipo de móveis. HTML organiza o conteúdo de uma página, como textos, imagens e
+  links, para que os navegadores possam exibi-los corretamente.</p>
+
+<small><a href="index.html">voltar</a></small>
+
+<h2 id="estrutura">Estrutura Básica de um Documento HTML:</h2>
+
+<p>Todo documento HTML começa com uma estrutura básica que ajuda os navegadores a entenderem como mostrar o conteúdo da
+  página. Aqui está um exemplo simples:</p>
+
+<img src="https://blog.codapp.com.br/wp-content/uploads/2022/05/estruturabasica.png" alt="doctype">
+
+<h3>Explicação da estrutura:</h3>
+<ul>
+  <li>&lt; !DOCTYPE html &gt;<p>Esta declaração informa ao navegador que ele está lidando com um documento HTML5. É
+      essencial para garantir que a página seja renderizada corretamente em todos os navegadores modernos.</p>
+  </li>
+
+  <li>&lt; html lang="pt-BR" &gt;<p>A tag &lt;html&gt; é a raiz do documento HTML. O atributo lang define o idioma do
+      conteúdo, que neste caso é português do Brasil. Isso ajuda os mecanismos de busca e leitores de tela a entenderem
+      o idioma da página.</p>
+  </li>
+  <li>&lt; head &gt;<p>Esta seção contém metadados sobre o documento, como o título da página, links para arquivos CSS,
+      scripts e outras informações que não são exibidas diretamente na página.</p>
+  </li>
+  <li>&lt; meta charset="UTF-8"&gt;<p>Define a codificação de caracteres do documento como UTF-8, que suporta
+      praticamente todos os caracteres de escrita do mundo. Isso garante que caracteres especiais sejam exibidos
+      corretamente.</p>
+  </li>
+  <li>&lt; title &gt;<p>Define o título da página que aparece na aba do navegador. É importante para SEO, pois os
+      motores de busca usam o título para indexar a página.</p>
+  </li>
+  <li>&lt; body &gt;<p>Contém todo o conteúdo visível da página, como textos, imagens e links. É onde você coloca tudo o
+      que quer que o usuário veja.</p>
+  </li>
+</ul>
+
+<small><a href="index.html">voltar</a></small>
+
+
+<h2 id="TAG">O que é uma Tag HTML?</h2>
+
+<p>Uma tag HTML é um elemento fundamental da linguagem HTML, usado para criar e estruturar o conteúdo de uma página da
+  web. As tags são como "rótulos" que dizem ao navegador como exibir o conteúdo. Elas são escritas entre colchetes
+  angulares (<>) e geralmente vêm em pares: uma tag de abertura e uma tag de fechamento.</p>
+
+<h3>Estrutura de uma Tag HTML</h3>
+<ul>
+  <li><strong>Tag de abertura:</strong> Indica o início de um elemento.</li>
+  <p>Exemplo: &lt;p&gt;</p>
+  <li><strong>Conteúdo:</strong> O texto ou elementos que a tag envolve. </li>
+  <p>Exemplo: <small>Este é um parágrafo.</small></p>
+  <li><strong>Tag de Fechamento:</strong> Indica o fim de um elemento.</li>
+  <p>Exemplo: &lt;/p&gt;</p>
+
+  <li>Exemplo completo:</li>
+  <p><mark>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</mark></p>
+</ul>
+
+<h3>Atributos</h3>
+<p>Tags HTML podem ter atributos, que fornecem informações adicionais sobre o elemento. Os atributos são escritos dentro
+  da tag de abertura e geralmente vêm em pares de nome e valor.</p>
+
+<ul>
+  <li>Exemplo de uma tag com atributo:</li>
+  <p><mark>&lt;a href="https://www.exemplo.com" title="Visite nosso site"&gt;Clique aqui&lt;/a&gt;</mark></p>
+  <ul>
+    <li><strong>href:</strong> Define o destino do link.</li>
+    <li><strong>title:</strong> Fornece uma dica de ferramenta que aparece quando o usuário passa o mouse sobre o link.
+    </li>
+  </ul>
+</ul>
+
+<small><a href="index.html">voltar</a></small>
+
+
+<h2 id="principaisTags">Principais Tags HTML e seus atributos:</h2>
+<ul>
+  <h4 id="link">&lt; link &gt; :</h3>
+    <ul>
+      <li><strong>O que faz:</strong> Conecta a página a recursos externos, como folhas de estilo CSS.</li>
+      <li><strong>Por que é importante:</strong> Permite que você adicione estilos e funcionalidades à sua página.</li>
+      <li><strong>Principais Atributos:</strong></li>
+      <ul>
+        <li>href: Especifica o URL do recurso vinculado.</li>
+        <li>rel: Define a relação entre o documento atual e o recurso vinculado. Exemplo: rel="stylesheet".</li>
+      </ul>
+    </ul>
+
+    <h4 id="h1ah6">&lt;h1&gt; a &lt;h6&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Define cabeçalhos, do mais importante &lt;h1&gt; ao menos importante &lt;h6&gt;.
+      </li>
+      <li><strong>Por que é importante:</strong> Ajuda a estruturar o conteúdo e é importante para SEO.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="p">&lt;p&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Define um parágrafo de texto.</li>
+      <li><strong>Por que é importante:</strong> Usado para blocos de texto corrido.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="a">&lt;a&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Cria um link para outra página ou recurso.</li>
+      <li><strong>Por que é importante:</strong> Permite a navegação entre páginas.</li>
+      <li><strong>Principais Atributos:</strong></li>
+      <ul>
+        <li>href: Define o destino do link.</li>
+        <li>title: Fornece uma dica de ferramenta que aparece quando o usuário passa o mouse sobre o link.</li>
+        <li>target: Define onde abrir o link. Exemplo: target="_blank" para abrir em uma nova aba.</li>
+      </ul>
+    </ul>
+
+    <h4 id="img">&lt;img&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Insere uma imagem na página.</li>
+      <li><strong>Por que é importante:</strong> Adiciona elementos visuais ao conteúdo.</li>
+      <li><strong>Principais Atributos:</strong></li>
+      <ul>
+        <li>src: Especifica o caminho para a imagem.</li>
+        <li>alt: Fornece um texto alternativo para a imagem, importante para acessibilidade.</li>
+        <li>width e height: Definem as dimensões da imagem.</li>
+      </ul>
+    </ul>
+
+    <h4 id="ul.ol.li">&lt;ul&gt; , &lt;ol&gt; e &lt;li&gt; :</h4>
+    <ul>
+      <li><strong>Oque faz:</strong></li>
+      <ul>
+        <li>&lt;ul&gt;: Cria uma lista não ordenada (com marcadores).&lt;/li&gt;
+        <li>&lt;ol&gt;: Cria uma lista ordenada (numerada).</li>
+        <li>&lt;li&gt;: Define um item de lista.</li>
+      </ul>
+      <li><strong>Por que é importante: </strong> Organiza informações em listas claras e fáceis de ler.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="div.span">&lt;div&gt; e &lt;span&gt; :</h4>
+    <ul><strong>
+        <li>O que faz:
+      </strong></li>
+      <ul>
+        <li>&lt;div&gt;: Cria um container de bloco para agrupar elementos.&lt;/li&gt;
+        <li>&lt;span&gt;: Cria um container em linha para estilizar partes de texto.</li>
+      </ul>
+      <li><strong>Por que é importante:</strong>Ajuda a organizar e aplicar estilos ao conteúdo.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.
+      </li>
+    </ul>
+
+    <h4 id="mark">&lt;mark&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Destaca o texto como se estivesse marcado com um marcador.</li>
+      <li><strong>Por que é importante:</strong> Para chamar a atenção para partes importantes do texto.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="small">&lt;small&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Exibe o texto em um tamanho menor.</li>
+      <li><strong>Por que é importante:</strong> Para notas de rodapé ou informações menos importantes.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="i">&lt;i&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Exibe o texto em itálico.</li>
+      <li><strong>Por que é importante:</strong> Para enfatizar palavras ou frases, ou para termos técnicos.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="u">&lt;u&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Sublinha o texto.</li>
+      <li><strong>Por que é importante:</strong> Para destacar texto, mas com cuidado, pois pode ser confundido com
+        links.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="strong">&lt;strong&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Exibe o texto em negrito, indicando importância.</li>
+      <li><strong>Por que é importante:</strong> Para destacar partes importantes do texto.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="sub.sup">&lt;sub&gt; e &lt;sup&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong>
+        <ul>
+          <li>&lt;sub&gt;: Exibe texto como subscrito (abaixo da linha base).</li>
+          <li>&lt;sup&gt;: Exibe texto como sobrescrito (acima da linha base).</li>
+        </ul>
+      <li><strong>Por que é importante:</strong> Para fórmulas químicas, matemáticas, etc.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+      </li>
+    </ul>
+
+    <h4 id="blackquote">&lt;blockquote&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Destaca uma citação em bloco.</li>
+      <li><strong>Por que é importante:</strong> Para citar textos longos de outras fontes.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+
+    <h4 id="abbr">&lt;abbr&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Define uma abreviação ou acrônimo.</li>
+      <li><strong>Por que é importante:</strong> Para fornecer a explicação completa de uma abreviação.</li>
+      <li><strong>Principais Atributos:</strong> title: Fornece a explicação completa da abreviação.</li>
+    </ul>
+
+    <h4 id="hr">&lt;hr&gt; :</h4>
+    <ul>
+      <li><strong>O que faz:</strong> Insere uma linha horizontal para separar conteúdo.</li>
+      <li><strong>Por que é importante:</strong> Para dividir seções de conteúdo.</li>
+      <li><strong>Atributos:</strong> Podem usar atributos globais como class e id.</li>
+    </ul>
+</ul>
+
+<small><a href="index.html">voltar</a></small>
+
+<h2 id="referencias">Referências:</h2>
+<ol>
+  <li>MDN Web Docs - HTML:</li>
+  <ul>
+    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML: HyperText Markup Language | MDN</a></li>
+    <li>Um recurso abrangente para aprender sobre HTML, com exemplos e explicações detalhadas.</li>
+  </ul>
+
+  <p></p>
+
+  <li>W3Schools - HTML Tutorial:</li>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/">HTML Tutorial - W3Schools</a></li>
+    <li>Um tutorial interativo que cobre os fundamentos do HTML e permite que você pratique diretamente no navegador.
+    </li>
+  </ul>
+
+  <p></p>
+
+  <li>HTML Living Standard:</li>
+  <ul>
+    <li><a href="https://html.spec.whatwg.org/multipage/">HTML Living Standard</a></li>
+    <li>A especificação oficial do HTML, mantida pelo WHATWG, que detalha todos os aspectos da linguagem.</li>
+  </ul>
+</ol>
+
+<small><a href="index.html">voltar</a></small>
+
+<hr>
+
+<blockquote>
+  Este guia fornece uma visão abrangente das tags HTML mais comuns e recomendadas atualmente, juntamente com seus
+  principais atributos. Compreender essas tags e atributos é essencial para criar e estruturar páginas da web de forma
+  eficaz. </blockquote>
+
+
+</body>
+</html>
